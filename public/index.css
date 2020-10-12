@@ -1,14 +1,43 @@
-#img {
-  display: block;
-  margin: auto;
-  height: 128px;
-  width: 128px;
-  padding: 2rem;
+:root {
+  --start: 0;
+  --end: 10000;
 }
 
-#canvas {
-  display: block;
-  margin: 2rem auto;
-  width: 540px;
-  height: 540px;
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.bloom {
+  width: 50vh;
+  height: 50vh;
+  padding: 0;
+  margin: 0;
+
+  --border-outset: 50;
+  --anim-var: 0;
+
+  border-width: 0;
+
+  border-image-source: paint(bloom);
+  border-image-slice: 0 fill;
+  border-image-outset: calc(var(--border-outset) * 1px);
+
+  background-color: #ddd;
+
+  animation: 3s change infinite alternate linear;
+
+}
+
+@keyframes change {
+  from {
+    --anim-var: var(--start);
+  }
+  to {
+    --anim-var: var(--end);
+  }
 }
