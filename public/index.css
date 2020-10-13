@@ -17,19 +17,16 @@ body {
   height: 50vh;
   padding: 0;
   margin: 0;
+  background-color: #ffff00;
 
   --border-outset: 50;
   --anim-var: 0;
-
-  border-width: 0;
 
   border-image-source: paint(bloom);
   border-image-slice: 0 fill;
   border-image-outset: calc(var(--border-outset) * 1px);
 
-  background-color: #ddd;
-
-  animation: 3s change infinite alternate linear;
+  animation: 6s change infinite linear;
 
 }
 

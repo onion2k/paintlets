@@ -6,5 +6,4 @@ CSS.registerProperty({
   inherits: false
 });
 
-
-CSS.paintWorklet.addModule('/_dist_/bloom.js');
+CSS.paintWorklet.addModule('/_dist_/cursor.js');
