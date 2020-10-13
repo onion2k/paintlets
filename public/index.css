@@ -17,7 +17,7 @@ body {
   height: 50vh;
   padding: 0;
   margin: 0;
-  background-color: #ffff00;
+  background-color: #f0f0f0;
 
   --border-outset: 50;
   --anim-var: 0;
@@ -26,7 +26,7 @@ body {
   border-image-slice: 0 fill;
   border-image-outset: calc(var(--border-outset) * 1px);
 
-  animation: 6s change infinite linear;
+  animation: 24s change infinite linear;
 
 }
 
